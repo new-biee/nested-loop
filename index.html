@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //Khai bao bien
+    // let sout;
+    // let i;
+    // let j;
+    // sout = "<table border='1' width='300' cellspacing='0' cellpadding = '3'>";
+
+    //Vong lap
+    // for (i = 1; i <= 10; i++) {
+    //     sout = sout + "<tr>";
+    //     for (j = 1; j <= 10; j++) {
+    //         sout = sout + "<td>" + i * j + "</td>";
+    //     }
+    //     sout = sout + "</td>";
+    // }
+    // sout = sout + "</table>";
+    // document.write(sout)
+
+
+    //Khai bao bien
+    let sot;
+    let ii;
+    let jj;
+
+    sot = "<table border='1' width = '300' cellspacing ='0' cellpadding ='3'>";
+    ii = jj = 1;
+
+    //Vong lap
+    while (ii <= 10) {
+        sot = sot + "<tr>";
+        while (jj <= 10) {
+            sot = sot + "<td>" + ii * jj + "</td>";
+            jj++;
+        }
+        sot = sot + "</td>"
+        jj = 1;
+        ii++;
+    }
+    sot = sot + "</table>";
+    document.write(sot)
+</script>
+</body>
+</html>
